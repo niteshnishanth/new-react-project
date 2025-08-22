@@ -1,0 +1,32 @@
+.card {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+.card-img-top {
+  height: 150px; 
+  object-fit: cover;
+}
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-overflow: ellipsis;
+}
+/* Single-line truncation for titles */
+.card-title {
+  overflow: hidden;        /* hide overflow */
+  text-overflow: ellipsis; /* show ... */
+  white-space: nowrap;     /* prevent wrapping */
+  font-weight: bold;
+}
+/* Multi-line truncation for text (e.g., description, address) */
+.card-text {
+  overflow: hidden;            /* hide overflow */
+  display: -webkit-box;        /* required for multi-line ellipsis */
+  -webkit-line-clamp: 3;       /* max number of lines to show */
+  -webkit-box-orient: vertical;
+  font-size: 0.9rem;
+}
+
