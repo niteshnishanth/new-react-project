@@ -7,29 +7,21 @@ const Navbar = ({ isLoggedIn }) => {
       <div className="container-fluid">
         <div className="collapse navbar-collapse show" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-
-            {/* Home */}
             <li className="nav-item">
               <NavLink className="nav-link" to="/Homepage">
                 Home
               </NavLink>
             </li>
-
-            {/* About */}
             <li className="nav-item">
               <NavLink className="nav-link" to="/About">
                 About
               </NavLink>
             </li>
-
-            {/* Contact */}
             <li className="nav-item">
               <NavLink className="nav-link" to="/Contact">
                 Contact
               </NavLink>
             </li>
-
-            {/* Events Dropdown */}
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
@@ -61,8 +53,6 @@ const Navbar = ({ isLoggedIn }) => {
                 )}
               </ul>
             </li>
-
-            {/* Login */}
             <li className="nav-item">
               <NavLink className="nav-link" to="/Login">
                 Login
