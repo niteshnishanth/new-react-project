@@ -22,7 +22,7 @@ function Login({ setIsLoggedIn }) {
       localStorage.setItem('loggedInUser', username);
       navigate('/Login')
     } else {
-      alert('Invalid Login')
+      alert('Invalid Login') ---
     }
   }
   const handleLogout =() =>{
